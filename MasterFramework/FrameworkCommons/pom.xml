@@ -46,7 +46,6 @@
 		<lombok.version>1.18.2</lombok.version>
 		<javamail.version>1.4</javamail.version>
 		<log4j.version>1.2.17</log4j.version>
-		<jackson.databind.version>2.5.4</jackson.databind.version>
 		<jira.rest.version>2.0.0-m32.w1</jira.rest.version>
 		<extent.report.version>3.1.5</extent.report.version>
 		<openCvVersion>2.4</openCvVersion>
