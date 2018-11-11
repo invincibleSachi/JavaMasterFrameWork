@@ -1,0 +1,11 @@
+2016-07-23 05:37:57,354 ERROR [errorlog] java.net.MalformedURLException: no protocol: CurrencyConvertor-soapui-project.xml
+java.net.MalformedURLException: no protocol: CurrencyConvertor-soapui-project.xml
+	at java.net.URL.<init>(URL.java:593)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at com.eviware.soapui.impl.wsdl.WsdlProject.<init>(WsdlProject.java:251)
+	at com.eviware.soapui.impl.wsdl.WsdlProject.<init>(WsdlProject.java:203)
+	at com.eviware.soapui.impl.wsdl.WsdlProject.<init>(WsdlProject.java:198)
+	at com.eviware.soapui.impl.wsdl.WsdlProject.<init>(WsdlProject.java:183)
+	at com.inspire.SoapTest.SoapTesting.runSoapTestSuite(SoapTesting.java:39)
+	at com.inspire.SoapTest.test.main(test.java:7)

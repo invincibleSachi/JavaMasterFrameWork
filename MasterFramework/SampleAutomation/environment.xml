@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<environments>
+
+	<environment id="dev">
+		<baseurl>http://localhost:8080/</baseurl>
+		<userid>sachchida.singh@inspire.com</userid>
+		<password>xxxxx</password>
+		<admin>admin@inspire.com</admin>
+		<adminpwd>admin@$123</adminpwd>
+		<var1>123</var1>
+		<var2>12345</var2>
+		<dbCon>jdbc:mysql://db-url-dev@inspire.com:8090/mydb</dbCon>
+	</environment>
+
+	<environment id="test">
+		<baseurl>http://localhost:8080/</baseurl>
+		<userid>sachchida.singh@inspire.com</userid>
+		<password>xxxxx</password>
+		<admin>admin@inspire.com</admin>
+		<adminpwd>admin@$123</adminpwd>
+		<var1>123</var1>
+		<var2>12345</var2>
+		<dbCon>jdbc:mysql://db-url-test@inspire.com:8090/mydb</dbCon>
+	</environment>
+	
+</environments>

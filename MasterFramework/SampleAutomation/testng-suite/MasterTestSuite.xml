@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="inspire Test Automation - All Test Suite" parallel="classes"
+	thread-count="30">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.inspire.abstestbase.TestListener" />
+		<listener class-name="com.inspire.abstest.SuiteListener" />
+		<!-- <listener class-name="org.testng.reporters.EmailableReporter2" /> -->
+		<!-- <listener class-name="com.inspire.abstestbase.RetryListener" /> -->
+	</listeners>
+	<suite-files>
+		<!--<suite-file path="./testng-suite/CloudApi_DriverLogin.xml" />-->
+		<suite-file path="./testng-suite/Sample_Sanity.xml" />
+		<suite-file path="./testng-suite/SampleAPI_TestSuite.xml" />
+	</suite-files>
+
+</suite>  

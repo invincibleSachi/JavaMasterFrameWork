@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="inspire Test Automation - Sanity Tests Suite"
+	parallel="methods" thread-count="4">
+	<!-- <parameter name="env" value="test" /> <parameter name="browser" value="chrome" 
+		/> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.inspire.abstestbase.TestListener" />
+		<listener class-name="com.inspire.abstest.SuiteListener" />
+		<listener class-name="org.testng.reporters.EmailableReporter2" />
+		<listener class-name="com.inspire.abstestbase.RetryListener" />
+	</listeners>
+	<test name=" API Sanity Tests">
+		<!-- <groups> <define name="all"> <include name="SANITY_API" /> <exclude 
+			name="" /> </define> <run> <include name="all" /> </run> </groups> -->
+		<classes>
+			<class name="com.inspire.sanity.tests.Sanity" />
+		</classes>
+	</test>
+
+</suite>  

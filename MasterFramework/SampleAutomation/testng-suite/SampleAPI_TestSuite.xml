@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="inspire Test Automation - API Tests Suite"
+	parallel="classes" thread-count="20">
+	<!-- <parameter name="env" value="test" /> <parameter name="browser" value="chrome" 
+		/> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.inspire.abstestbase.TestListener" />
+		<listener class-name="com.inspire.abstest.SuiteListener" />
+		<listener class-name="org.testng.reporters.EmailableReporter2" />
+		<listener class-name="com.inspire.abstestbase.RetryListener" />
+	</listeners>
+	<test name="Device API end to end Tests" preserve-order="true">
+		<!-- <groups> <define name="all"> <include name="API" /> <exclude 
+			name="" /> </define> <run> <include name="all" /> </run> </groups> -->
+		<classes>
+			<class name="com.inspire.api.dashboard.AuthAPI" />
+			<!-- <class name="com.inspire.api.sanity" /> -->
+			<class name="com.inspire.api.sampleTest" />
+		</classes>
+	</test>
+
+</suite>  
